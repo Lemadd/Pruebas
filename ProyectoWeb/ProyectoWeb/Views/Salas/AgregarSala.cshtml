@@ -1,0 +1,64 @@
+﻿@model ProyectoWeb.Models.tb_sala
+@{
+    ViewBag.Title = "AgregarSala";
+    
+    List<SelectListItem> tiposProyecciones = new List<SelectListItem>();
+    tiposProyecciones.Add(new SelectListItem
+    {
+        Text = "3D",
+        Value = "3D"
+    });
+    tiposProyecciones.Add(new SelectListItem
+    {
+        Text = "2D",
+        Value = "2D",
+        Selected = true
+    });
+}
+
+<h2>AgregarSala</h2>
+<div class="container">
+    @using (Html.BeginForm("AgregarSala", "Salas", FormMethod.Post, new { @class = "form-horizontal", @role = "form" }))
+    {
+        <div class="form-group">
+            <label class="control-label col-md-2">Codigo</label>
+            <div class="col-md-6">
+                @Html.TextBoxFor(Model => Model.cod_sala, new { @Value = ViewBag.codigo, @readonly = "readonly", @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Nombre</label>
+            <div class="col-sm-6">
+                @Html.TextBoxFor(Model => Model.nom_sala, new { @class = "form-control", @placeholder = "Nombre de la Sala" })
+                @Html.ValidationMessageFor(Model => Model.nom_sala)
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Tipo de Sala</label>
+            <div class="col-sm-6">
+                @Html.DropDownList("cod_tipo_sala", (SelectList)ViewBag.TipoSala, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Tipo de proyeccion</label>
+            <div class="col-sm-6">
+                @Html.DropDownListFor(Model => Model.tipo_proyeccion, tiposProyecciones, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Local</label>
+            <div class="col-sm-6">
+                @Html.DropDownList("id_local", (SelectList)ViewBag.locales, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-2 col-sm-offset-1">
+                <input class="btn btn-default" type="submit" value="Agregar" />
+            </div>
+            <div class="col-sm-2">
+                @Html.ActionLink("Cancelar", "Index", "Index", new { @role = "button", @class = "btn btn-default" })
+            </div>
+        </div>
+
+    }
+</div>

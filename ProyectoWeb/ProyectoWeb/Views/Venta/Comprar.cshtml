@@ -1,0 +1,367 @@
+﻿@model ProyectoWeb.Models.tb_horario_funcion
+@{
+    ViewBag.Title = "Comprar";
+    var tipoEntradas = (List<ProyectoWeb.Models.tb_tipo_entrada>)ViewBag.tipoEntradas;
+    var pelicula = (ProyectoWeb.Models.tb_peliculas)ViewBag.pelicula;
+    var sala = (ProyectoWeb.Models.tb_sala)ViewBag.sala;
+    var asientos = (List<string>) ViewBag.asientos;
+
+    var id_horario_funcion = Model.id_horario_funcion;
+    var nom_sala = sala.nom_sala;
+    
+    
+    var ladoAsiento = 10;
+    var anchoSala = sala.TipoSala.ancho * ladoAsiento;
+
+    var largo = sala.TipoSala.largo;
+    var ancho = sala.TipoSala.ancho;
+    string asiento = "";
+
+}
+<style>
+
+    #pantalla {
+        text-align:center;
+        font-size:30px;
+        background-color:white;
+        border: 2px solid black;
+    }
+
+    #contenerdorsala {
+        width: 1000px;
+        height: 600px;
+        background-color: black;
+        margin-bottom:30px; 
+    }
+
+    .PREMIUM {
+        width: 980px;
+    }
+
+    .NORMAL {
+        width: 840px;
+    }
+
+    .SMALL {
+        width: 700px;
+    }
+
+    #sala{
+        padding-top: 50px;
+        margin:auto;
+    }
+
+    #sala .asiento {
+        background-color: #FFF;
+        z-index: 5;
+        color: #000;
+    }
+
+    .tempClass {
+        background-color: #FFF;
+        z-index: 5;
+        color: #000;
+    }
+
+    #sala .asiento .div{
+        text-align:center;
+        overflow:hidden;
+    }
+
+    .asiento {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align:center;
+        padding-top: 5px;
+    }
+
+    .asiento_ocupado {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        padding-top: 5px;
+        cursor:not-allowed;
+        background-color:#C2C2C2;
+    }
+</style>
+
+<div class="container">
+    <div class="row"><h2>Proceso de Compra</h2></div>
+    <hr />
+    <div class="row">
+        <div class="col-md-3">
+            <figure>
+                <img style="width:180px;height:250px;" src="~/images/peliculas/@(@pelicula.imagePath)" />
+                <div>
+                    <h2>@pelicula.nombre_peli</h2>
+                    <table class="table table-condensed table-user-information">
+                        <tbody>
+                            <tr><td>Duracion</td><td>@pelicula.duracion min</td></tr>
+                            <tr><td>Clasificacion</td><td>@pelicula.ClasificacionPelicula.descripcion</td></tr>
+                            <tr><td>Hora</td><td>@Model.hora_inicio</td></tr>
+                            <tr><td>Fecha</td><td>@Model.hora_fin</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </figure>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <h1>Precios, seleccione entradas</h1>   
+                <input type="hidden" id="nombresala" value="@sala.nom_sala"/>
+                <input type="hidden" id="id_horario_funcion" value="@Model.id_horario_funcion" />
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var tipoent in tipoEntradas)
+                        {
+                            <tr>                             
+                                <td>@tipoent.descripcion</td>
+                                <td>S/. @tipoent.costo_ent</td>
+                                <td>
+                                    <div class="col-md-8" >
+                                        <input name="@tipoent.id_entrada" type="hidden" value="@tipoent.costo_ent" />
+                                        <input name="cantidad" id="@tipoent.id_entrada" class="form-control " type="number" value="0" min="0" max="20" />
+                                    </div>
+                                </td>
+                                <td  class="@tipoent.id_entrada">0</td>
+                            </tr>
+                        }
+                        
+                    </tbody>
+                </table>
+            </div>
+           
+            <hr />
+            <div class="row">
+                <h1>Elija Asientos</h1>
+                <div id="contenerdorsala">
+                    <div id="pantalla">
+                        PANTALLA
+                    </div>   
+                    <div id="sala" class="@sala.TipoSala.descripcion">
+                        @for (int i = 1; i <= largo; i++)
+                        {
+                            var letra = (char)(i + 64);
+                            for (int j = 1; j <= ancho + 2; j++)
+                            {
+                                asiento = letra.ToString() + j;
+                                if (j == 5 || j == 20)
+                                {
+                                    <div style="float:left;background-color:black;width: 35px;height: 35px;" ></div>
+                                }
+                                else
+                                {
+                                    if (asientos.Contains(asiento))
+                                    {
+                                        <div class="asiento_ocupado" id="@letra@j" style="float:left;">
+                                        <div>
+                                            @letra@j.ToString()
+                                        </div>
+                                        <input type="checkbox" name="asientossala" style="display: none; background-color: #C2C2C2;cursor: not-allowed;" value="@letra@j" disabled/>
+                                    </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="asiento" id="@letra@j" style="float:left">
+                                            <div>
+                                                @letra@j.ToString()
+                                            </div>
+                                            <input type="checkbox" name="asientossala" style="display: none;" value="@letra@j"/>
+                                        </div>
+                                    }
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" id="comprar" style="width: 100%;margin-left:40px;">Realizar la compra</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    
+
+    (function ($) {
+
+        function subtotales(id) {
+            var txtCantidad = document.getElementById(id).value;
+            var costo = document.getElementsByName(id)[0].value;
+            var subtotal = txtCantidad * costo;
+            console.log(subtotal);
+            $('.' + id).text('S/.' + subtotal);
+        };
+
+        $.fn.bootstrapNumber = function (options) {
+
+            var settings = $.extend({
+                upClass: 'default',
+                downClass: 'default',
+                center: true
+            }, options);
+
+            return this.each(function (e) {
+                var self = $(this);
+                var clone = self.clone();
+
+                var min = self.attr('min');
+                var max = self.attr('max');
+                var id = self.attr("id");
+
+                function setText(n) {
+                    if ((min && n < min) || (max && n > max)) {
+                        return false;
+                    }
+
+                    clone.val(n);
+                    return true;
+                }
+
+                var group = $("<div class='input-group'></div>");
+                var down = $("<button type='button'>-</button>").attr('class', 'btn btn-' + settings.downClass).click(function () {
+                    setText(parseInt(clone.val()) - 1);
+                    subtotales(id);
+                });
+                var up = $("<button type='button' >+</button>").attr('class', 'btn btn-' + settings.upClass).click(function () {
+                    setText(parseInt(clone.val()) + 1);
+                    subtotales(id);
+                });
+                $("<span class='input-group-btn'></span>").append(down).appendTo(group);
+                clone.appendTo(group);
+                if (clone) {
+                    clone.css('text-align', 'center');
+                }
+                $("<span class='input-group-btn'></span>").append(up).appendTo(group);
+
+                // remove spins from original
+                clone.attr('type', 'text').keydown(function (e) {
+                    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                        (e.keyCode == 65 && e.ctrlKey === true) ||
+                        (e.keyCode >= 35 && e.keyCode <= 39)) {
+                        return;
+                    }
+                    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                        e.preventDefault();
+                    }
+
+                    var c = String.fromCharCode(e.which);
+                    var n = parseInt(clone.val() + c);
+
+                    if ((min && n < min) || (max && n > max)) {
+                        e.preventDefault();
+                    }
+                });
+
+                self.replaceWith(group);
+            });
+        };
+
+        $('[name="cantidad"]').bootstrapNumber();
+
+        $("input[name=cantidad]").change({ msg: "ok" }, function (event) {
+            var id = $(this).attr("id");
+            subtotales(id);
+        });
+
+        $("div.asiento").on("click", function (event) {
+            var target = $(event.target);
+            
+            var id = $(this).attr("id");
+            var asiento = document.getElementById(id);
+
+            if (target.is('input:checkbox')) return;
+
+            var checkbox = $(this).find("input[type='checkbox']");
+
+            if (!checkbox.prop("checked")) {
+                checkbox.prop("checked", true);
+                asiento.style.backgroundColor = "#C2C2C2";
+            } else {
+                checkbox.prop("checked", false);
+                asiento.style.backgroundColor ="white";
+            }
+        });
+
+        // METODO QUE ENVIA DATOS DE LA VENTA AL ACTION INGRESAR DATOS VENTA, VIA AJAX
+        $("#comprar").on("click", function (e) {
+            var datosVenta = {};
+            datosVenta.id_horario_funcion = document.getElementById("id_horario_funcion").value;
+            datosVenta.nom_sala = document.getElementById("nombresala").value;
+            
+            datosVenta.listaEntradas = [];
+            datosVenta.listaAsientos = [];
+
+            var asientosSeleccionados = getCheckedBoxes("asientossala");
+
+            if (asientosSeleccionados !== null) {
+                for (var i = 0; i < asientosSeleccionados.length; i++) {
+                    var Asiento = {};
+                    Asiento.numeroAsiento = asientosSeleccionados[i].value;
+                    datosVenta.listaAsientos.push(Asiento);
+                }
+            }
+
+            var cantidadEntradas = document.getElementsByName("cantidad");
+
+            for (var i = 0; i < cantidadEntradas.length; i++) {
+                var Entrada = {};
+                Entrada.id_tipo = i + 1;
+                Entrada.cantidad = cantidadEntradas[i].value;
+                Entrada.precio_uni = 0;
+                Entrada.desc_entrada = "";
+                datosVenta.listaEntradas.push(Entrada);
+            }
+
+            console.log(datosVenta);
+            datosVenta = JSON.stringify({ 'datosVenta': datosVenta });
+
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                type: "POST",
+                dataType: 'json',
+                url: "@Url.Action("IngresarDatosVenta", "Venta")",
+                data: datosVenta,
+                success: function (data) {
+                    if (data.ok)
+                        window.location = data.newurl;
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+
+        });
+
+        function getCheckedBoxes(chkboxName) {
+            var checkboxes = document.getElementsByName(chkboxName);
+            var checkboxesChecked = [];
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    checkboxesChecked.push(checkboxes[i]);
+                }
+            }
+            return checkboxesChecked.length > 0 ? checkboxesChecked : null;
+        }
+
+    }(jQuery))
+ 
+</script>                   
+
+    

@@ -1,0 +1,65 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            @Html.ActionLink("YO TE VEO", "Index", "Home", null,new { @class = "navbar-brand"})
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">@Html.ActionLink("Inicio", "Index", "Home")</li>
+                <li>@Html.ActionLink("Cartelera", "ListarTodo", "Home")</li>
+                <li>@Html.ActionLink("Proximos estrenos", "ListarEstrenos", "Home")</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Peliculas por Genero<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("Accion", "ListarPeliculasGenero", "Home", new { id = "G0000001" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Aventura", "ListarPeliculasGenero", "Home", new { id = "G0000002" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Ciencia Ficción", "ListarPeliculasGenero", "Home", new { id = "G0000003" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Comedia", "ListarPeliculasGenero", "Home", new { id = "G0000004" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Drama", "ListarPeliculasGenero", "Home", new { id = "G0000005" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Fantasía", "ListarPeliculasGenero", "Home", new { id = "G0000006" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Melodrama", "ListarPeliculasGenero", "Home", new { id = "G0000007" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Romance", "ListarPeliculasGenero", "Home", new { id = "G0000008" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Suspenso", "ListarPeliculasGenero", "Home", new { id = "G0000009" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Terror", "ListarPeliculasGenero", "Home", new { id = "G0000010" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Animación", "ListarPeliculasGenero", "Home", new { id = "G0000011" }, new { @role = "link" })</li>
+                        <li>@Html.ActionLink("Musical", "ListarPeliculasGenero", "Home", new { id = "G0000012" }, new { @role = "link" })</li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li>@Html.ActionLink("Iniciar Sesion", "Index", "Logueo")</li>
+            </ul>
+            <div class="navbar-form navbar-right">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        @using (Html.BeginForm("BuscarPeliculas", "Home"))
+                        {
+                            <table>
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder="Buscar Pelicula" value="" name="pelicula" style="width:auto"></td>
+                                    <td><input type="submit" value="Buscar" class="btn btn-default" /></td>
+                                </tr>
+                            </table>
+
+
+
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+

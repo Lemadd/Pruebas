@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_peliculas>
+@{
+    ViewBag.Title = "ListarPeliculasGenero";
+    string regpeli = "";
+}
+@foreach (var reg  in Model)
+{
+     string regpeli1=@reg.Generos.descripcion;
+     regpeli = regpeli1;
+}
+
+
+<div>
+    
+    <p class="text-center" style="padding-top:15px; font-size:40px;">@ViewBag.mensaje</p>
+    <p class="text-center" style="padding-top:15px; font-size:40px;">Listado de Peliculas de @ViewBag.mensajegenero</p>
+    @Html.Partial("_ListadoPeliculas")
+</div>

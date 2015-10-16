@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_horario_funcion>
+
+@{
+    ViewBag.Title = "DetalleCartelera";
+    var dias = new [] { "LUNES", "MARTES", "MIERCOLES", "JUEVES",
+                        "VIERNES", "SABADO", "DOMINGO" };
+
+    var arrayDiasFuncion = (List<int>)ViewBag.dias;
+    var fechas = (List<String>)ViewBag.fechas;
+    int indice = 0;
+}
+
+<div class='container'>
+    <div class="row">
+        <h2>Cartelera de la Semana</h2>
+        <div class="col-xs-12 col-md-8">
+            <div class="row movie-overview-info">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>@ViewBag.nombrePeli</h3>
+                    </div>
+                </div>
+                <div class="tab-resume">
+                    <table class="table table-condensed" style="margin-top:10px;margin-bottom:10px;width:100%;">
+                        <thead>
+                            <tr>
+                                <td>Dia</td>
+                                <td>Hora</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var dia in arrayDiasFuncion)
+                            {
+                                <tr>
+                                    <td>@dias[dia - 1] @fechas[indice]</td>
+                                    @foreach (var reg in Model)
+                                    {
+                                        if (reg.id_dia == dia)
+                                        {
+                                            <td>@Html.ActionLink(reg.hora_inicio, "Comprar", "Venta", new { id = reg.id_horario_funcion }, new { @class="btn btn-primary" })</td>
+                                        }
+                                    }
+                                    
+                                </tr>
+                                indice = indice + 1;
+                            }
+                        </tbody>    
+                    </table>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+
+</script>

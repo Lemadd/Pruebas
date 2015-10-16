@@ -1,0 +1,76 @@
+﻿@model ProyectoWeb.Models.tb_cliente
+@{
+    ViewBag.Title = "ComprarFinal";
+    var datosVenta = (ProyectoWeb.ModelsDTO.DatosVentaDTO)HttpContext.Current.Session["datosVenta"];
+    var listaEntradas = datosVenta.listaEntradas;
+    var item = 0;
+    decimal montoTotal = 0;
+}
+<div class="container">
+    <h2 class="plomo">Datos Compra</h2>
+    <hr />
+    <h3 class="plomo">Datos de Cliente</h3>
+
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label class="control-label col-sm-4 plomo" for="nom_local">Nombre</label>
+                    <div class="col-sm-8">
+                        @Html.TextBoxFor(Model => Model.nombre_cli, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <input type="submit" class="btn btn-default btn-lg" value="REALIZAR COMPRA" />
+            </div>
+        </div><br />
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label class="control-label col-sm-4 plomo" for="nom_local">Correo Electronico</label>
+                    <div class="col-sm-8">
+                        @Html.TextBoxFor(Model => Model.correo_cli, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="plomo">Item</td>
+                        <td class="plomo">Tipo Entrada</td>
+                        <td class="plomo">Precio</td>
+                        <td class="plomo">Cantidad</td>
+                        <td class="plomo">Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var reg in listaEntradas)
+                    {
+                        item = item + 1;
+                        decimal subtotal = reg.precio_uni * reg.cantidad;
+                        montoTotal = montoTotal + (reg.precio_uni * reg.cantidad);
+
+                        <tr>
+                            <td class="plomo">@item</td>
+                            <td class="plomo">@reg.desc_entrada</td>
+                            <td class="plomo">S/. @reg.precio_uni</td>
+                            <td class="plomo">@reg.cantidad</td>
+                            <td class="plomo">S/. @subtotal</td>
+                        </tr>
+
+                    }
+                    <tr>
+                        <td colspan="5" class="plomo">Total de la Compra: S/. @montoTotal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

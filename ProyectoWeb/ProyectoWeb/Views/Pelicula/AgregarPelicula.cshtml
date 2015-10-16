@@ -1,0 +1,123 @@
+﻿@model ProyectoWeb.Models.tb_peliculas
+@{
+    ViewBag.Title = "AgregarPelicula";
+    
+    
+}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".datefield").datepicker();
+        });
+    </script>
+<div class="container">
+<h2 class="azul">Agregar Pelicula</h2>
+@using (Html.BeginForm("AgregarPelicula", "Pelicula", FormMethod.Post, new {@class = "form-horizontal", @enctype = "multipart/form-data", @role = "form" }))
+{
+    <div class="form-group">  
+        <h5 class="control-label col-sm-2 azul">Codigo</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.cod_peli, new { @Value = ViewBag.codigo, @readonly = "readonly", @class = "form-control", @type="date" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Nombre</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.nombre_peli, new { @class = "form-control", @placeholder = "Pelicula", @type = "date" })
+            @Html.ValidationMessageFor(Model => Model.nombre_peli)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Titulo de la Pelicula</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.titulo_origen, new { @class = "form-control", @type = "date" })
+            @Html.ValidationMessageFor(Model => Model.titulo_origen)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Director</h5>
+        <div class="col-sm-10">
+           @Html.TextBoxFor(Model => Model.director, new { @class = "form-control", @type = "date" })
+           @Html.ValidationMessageFor(Model => Model.director)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Sinopsis</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.sinopsis, new { @class = "form-control", @type = "date" })
+            @Html.ValidationMessageFor(Model => Model.sinopsis)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Actores</h5>
+        <div class="col-sm-10">
+           @Html.TextBoxFor(Model => Model.actores, new { @class = "form-control", @type = "date" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Clasificacion</h5>
+        <div class="col-sm-10">
+            @Html.DropDownList("cod_clasificacion_pelicula", (SelectList)ViewBag.ClasificacionPelicula, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Duracion</h5>
+        <div class="col-sm-10">
+           @Html.TextBoxFor(Model => Model.duracion, new { @class = "form-control", @type = "date" })
+           @Html.ValidationMessageFor(Model => Model.duracion)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Pais</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.pais_origen, new { @class = "form-control", @type = "date" })
+            @Html.ValidationMessageFor(Model => Model.pais_origen)
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Estreno</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.fecha_estreno, new { @Value = ViewBag.actualyear, @class = "form-control", type = "date" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Genero</h5>
+        <div class="col-sm-10">
+            @Html.DropDownList("cod_genero", (SelectList)ViewBag.Generos, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Tipo</h5>
+        <div class="col-sm-10">
+            @Html.DropDownList("cod_tipo_pelicula", (SelectList)ViewBag.TipoPelicula, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Estado</h5>
+        <div class="col-sm-10">
+            @Html.DropDownList("cod_estado_pelicula", (SelectList)ViewBag.EstadoPelicula, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Trailer</h5>
+        <div class="col-sm-10">
+            @Html.TextBoxFor(Model => Model.fecha_estreno, new { @Value = ViewBag.trailer, @class = "form-control", @type = "date" })
+        </div>
+    </div>
+    <div class="form-group">
+        <h5 class="control-label col-sm-2 azul">Imagen</h5>
+        <div class="col-sm-10">
+            <input id="imagePath" class="form-control" title="Subir Imagen" type="file" name="file" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="control-label col-sm-2 azul">
+            <input class="btn btn-default" type="submit" value="Agregar" />
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+            @Html.ActionLink("Cancelar", "Index", "Index", new { @role = "button", @class = "btn btn-default" })
+        </div>
+    </div>
+}
+</div>

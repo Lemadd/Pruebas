@@ -1,0 +1,32 @@
+﻿   <!-- Sidebar -->
+<nav class="navbar navbar-nav navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+
+        <li class="sidebar-brand">
+        </li>
+        <img src="~/images/iconos/user_default.jpg" style="width:120px;margin-left:40px;margin-bottom:40px;" alt="">
+        <li class="active">
+            <h6>@Html.ActionLink("YO TE VEO ", "Index", "Administracion")</h6>
+        </li>
+        <li>
+            <h6>@Html.ActionLink("Peliculas ", "Index", "Pelicula")</h6>
+        </li>
+        <li>
+            <h6>@Html.ActionLink("Carteleras", "Index", "Cartelera")</h6>
+        </li>
+        <li>
+            <h6>@Html.ActionLink("Salas ", "Index", "Salas")</h6>
+        </li>
+        <li>
+            <h6>@Html.ActionLink("Locales ", "Index", "Locales")</h6>
+        </li>
+        <li>
+            <h6><a href="#">Opciones de Usuario</a></h6>
+        </li>
+        <li>
+            <h6>@Html.ActionLink("LogOff", "LogOff", "Login")</h6>
+        </li>
+    </ul>
+
+</nav>
+<!-- /#sidebar-wrapper -->

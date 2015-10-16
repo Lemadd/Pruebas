@@ -1,0 +1,47 @@
+﻿@model ProyectoWeb.Models.tb_local
+@{
+    ViewBag.Title = "AgregarLocal";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Agregar Local</h2>
+        @using (Html.BeginForm("AgregarLocal", "Locales", FormMethod.Post, new { @class = "form-horizontal", @enctype = "multipart/form-data", @role = "form" }))
+        {
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nom_local">Nombre de local</label>
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(Model => Model.nom_local, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(Model => Model.nom_local)
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="dir_local">Direccion de local</label>
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(Model => Model.dir_local, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(Model => Model.dir_local)
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="telefono">Telefono de local</label>
+                <div class="col-sm-6">
+                    @Html.TextBoxFor(Model => Model.telefono, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(Model => Model.telefono)
+                </div>
+            </div>
+    <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-1">
+            <input type="submit" class="btn btn-default" value="Registrar" />
+        </div>
+        <div class="col-sm-5 col-sm-offset-1">
+            @Html.ActionLink("Cancelar", "Index", "Index", new { @role = "button", @class = "btn btn-default" })
+        </div>
+    </div>
+        }
+    </div>
+</div>
+
+
+
+

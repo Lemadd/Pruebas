@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Comprobante";
+    var venta = (ProyectoWeb.Models.tb_venta)TempData["venta"];
+    var listaEntradas = (List<ProyectoWeb.Models.tb_entradas_venta>)TempData["listaEntradas"];
+    var listaAsientos = (List<ProyectoWeb.Models.tb_venta_deta>)TempData["listaAsientos"];
+    var horarioFuncion = (ProyectoWeb.Models.tb_horario_funcion)TempData["horarioFuncion"];
+    var cantidadEntradas = 0;
+
+    var dias = new[] { "LUNES", "MARTES", "MIERCOLES", "JUEVES",
+                        "VIERNES", "SABADO", "DOMINGO" };
+
+    var itemEntrada = 0;
+    var itemAsiento = 0;
+}
+
+<div class='container'>
+    <div class="row">
+        <h2>Compra Realizada con Exito!</h2>
+        <p>Se le envio un email a su correo con los detalles.</p>
+    </div>
+    <hr />
+    <div class="row">
+        <h3>Detalle de la compra</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <p><b>Pelicula</b></p>
+                    <p>@venta.HorarioFuncion.Funcion.Peliculas.nombre_peli</p><br />
+                </div>
+                <div class="col-md-4">
+                    <p><b>Sala</b></p>
+                    <p>@venta.HorarioFuncion.Funcion.Sala.nom_sala</p>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Dia</b></p>
+                    <p>@dias[venta.HorarioFuncion.id_dia - 1]</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h3>Entradas</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Tipo de Entrada</td>
+                            <td>Cantidad</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var reg in listaEntradas)
+                        {
+                            
+                            <tr>
+                                <td>@itemEntrada</td>
+                                <td>@reg.Entrada.descripcion</td>
+                                <td>@reg.cantidad</td>
+                            </tr>
+                            cantidadEntradas = cantidadEntradas + reg.cantidad;
+                            itemEntrada = itemEntrada + 1;
+                        }
+                        <tr>
+                            <td colspan="3">Cantidad de Entradas: @cantidadEntradas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br />
+        <h3>Asientos comprados</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <td>Item</td>
+                            <td>Asiento</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var reg in listaAsientos)
+                        {
+                            itemAsiento = 1;
+                            <tr>
+                                <td>@itemAsiento</td>
+                                <td>@reg.asiento</td>
+                            </tr>
+                            itemAsiento = itemAsiento + 1;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

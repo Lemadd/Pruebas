@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_peliculas>
+@{
+    ViewBag.Title = "_LayoutPeliculas";
+}
+
+<div>
+    <table id="peliculas" class="display table table-striped table-bordered dataTable" style="color: #0B7A99;" cellspacing="0" role="grid" aria-describedby="example_info">
+        <thead>
+            <tr role="row">
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Codigo</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Pelicula</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Origen</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Director</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Clasificacion</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Duracion</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Fecha de Estreno</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Genero</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Tipo</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Editar</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Eliminar</th>
+            </tr>
+        </thead>
+        <tbody class="azul">
+            @foreach (var reg in Model)
+            {
+                <tr class="" role="row">
+                    <td class="sorting_1">@reg.cod_peli</td>
+                    <td class="sorting_1">@reg.nombre_peli</td>
+                    <td class="sorting_1">@reg.titulo_origen</td>
+                    <td class="sorting_1">@reg.director</td>
+                    <td class="sorting_1">@reg.ClasificacionPelicula.descripcion</td>
+                    <td class="sorting_1">@reg.duracion</td>
+                    <td class="sorting_1">@reg.fecha_estreno.Year</td>
+                    <td class="sorting_1">@reg.Generos.descripcion</td>
+                    <td class="sorting_1">@reg.TipoPelicula.descripcion</td>
+                    <td class="sorting_1">@Html.ActionLink("Editar", "EditarPelicula", new { id = reg.cod_peli })</td>
+                    <td class="sorting_1">@Html.ActionLink("Eliminar", "EliminarPelicula", new { id = reg.cod_peli })</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

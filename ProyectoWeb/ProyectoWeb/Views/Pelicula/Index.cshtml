@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Html.ActionLink("Agregar Pelicula", "AgregarPelicula", "Pelicula")</h2>
+@if (TempData["SUCCESS"] != null)
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>@TempData["SUCCESS"]</strong>
+    </div>
+}
+
+@using (Html.BeginForm("BuscarPeliculas", "Pelicula"))
+{
+    <div class="form-group form-signin">
+        Nombre de la Pelicula
+        <input type="search" style="width: 1000px;" class="form-control" placeholder="Buscar Pelicula" value="@ViewBag.pelicula" name="pelicula" style="width:auto">
+        <input type="submit" value="Buscar" class="btn btn-default" />
+    </div>
+}
+@Html.Partial("_LayoutPeliculas")

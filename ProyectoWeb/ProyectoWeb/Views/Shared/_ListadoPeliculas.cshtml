@@ -1,0 +1,28 @@
+﻿<div class='site-content'>
+    <div class='container'>
+        <h1 class="text-center">
+            Resultados de la busqueda
+        </h1>
+        <div class="row">
+            @foreach (var reg in Model)
+            {
+                <div class="col-xs-12 col-md-8">
+                    <div class="row movie-overview-info">
+                        <div class="col-xs-3 ">
+                            <img style="width:180px;height:250px;" src="~/images/peliculas/@(@reg.imagePath)" />
+                        </div>
+                        <div class="col-xs-9 ">
+                            <h3 class="plomo">@reg.nombre_peli</h3>
+                            <p>@reg.sinopsis</p>
+                            <p>@Html.ActionLink("Ver Detalles", "VerPelicula", "Home", new { id = @reg.cod_peli }, new { @class = "btn btn-default", @role = "button" })</p>
+
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_peliculas>
+@{
+    ViewBag.Title = "ListarEstrenos";
+}
+
+       <div>
+            <div class='container'>
+                @ViewBag.mensaje
+            </div>
+            <h1 class="text-center">
+                Lista de Estrenos
+            </h1>
+            @Html.Partial("_ListadoPeliculas")
+        </div>

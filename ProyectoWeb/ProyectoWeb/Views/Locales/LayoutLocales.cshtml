@@ -1,0 +1,30 @@
+﻿@model   IEnumerable<ProyectoWeb.Models.tb_local>
+@{
+    ViewBag.Title = "_LayoutLocales";
+}
+
+<div class="row">
+    <table id="locales" class="display table table-striped table-bordered dataTable" cellspacing="0" role="grid" aria-describedby="example_info">
+        <thead>
+            <tr role="row">
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Codigo</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Nombre</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Direccion</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Telefono</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reg in Model)
+            {
+                <tr class="" role="row">
+                    <td class="sorting_1">@reg.id_local</td>
+                    <td class="sorting_1">@reg.nom_local</td>
+                    <td class="sorting_1">@reg.dir_local</td>
+                    <td class="sorting_1">@reg.telefono</td>
+                    <td class="sorting_1">@Html.ActionLink("Editar", "EditarLocal", new { id = reg.id_local })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

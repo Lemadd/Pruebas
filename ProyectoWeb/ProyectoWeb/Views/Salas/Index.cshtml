@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>@Html.ActionLink("Agregar Sala", "AgregarSala", "Salas")</h2>
+
+@if (TempData["SUCCESS"] != null)
+{
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>@TempData["SUCCESS"]</strong>
+    </div>
+}
+
+@Html.Partial("_LayoutSala")

@@ -1,0 +1,103 @@
+﻿@model ProyectoWeb.Models.tb_funcion
+@{
+    ViewBag.Title = "EditarCartelera";
+}
+
+<h2>Editar Cartelera</h2>
+@using (Html.BeginForm("EditarCartelera", "Cartelera", FormMethod.Post, new { @class = "form-horizontal", @enctype = "multipart/form-data", @role = "form" }))
+{
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Codigo</label>
+                <div class="col-sm-8">
+                    @Html.TextBoxFor(Model => Model.cod_funcion, new { @Value = ViewBag.codigo, @readonly = "readonly", @class = "form-control", @hidden = "true" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Local</label>
+                <div class="col-sm-8">
+                    @Html.DropDownList("id_local", (SelectList)ViewBag.locales, "Elija Local", new { @class = "form-control", @id = "locales" })
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <div class="control-label">
+                    <input class="btn btn-primary btn-lg" type="submit" value="GRABAR" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Salas</label>
+                <div class="col-sm-8">
+                    <select id="salas" name="cod_sala" class="form-control">
+                        <option value="-1">Elija Sala</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Pelicula</label>
+                <div class="col-sm-8">
+                    @Html.DropDownList("cod_peli", (SelectList)ViewBag.peliculas, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Fecha de Inicio</label>
+                <div class="col-sm-8">
+                    <div class='input-group date' id='datetimepicker2a'>
+                        <input type='text' name="fecha_inicio" class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar "></span>
+                        </span>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker2a').datetimepicker({
+                                locale: 'es',
+                                format: 'L'
+                            });
+                        });
+                    </script>
+                    @Html.ValidationMessageFor(Model => Model.fecha_inicio)
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label class="control-label col-sm-4">Fecha de Fin</label>
+                <div class="col-sm-8">
+                    <div class='input-group date' id='datetimepicker2b'>
+                        <input type='text' name="fecha_fin" class="form-control" />
+                        <span class="input-group-addon form">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker2b').datetimepicker({
+                                locale: 'es',
+                                format: 'L'
+                            });
+                        });
+                    </script>
+                    @Html.ValidationMessageFor(Model => Model.fecha_fin)
+                </div>
+            </div>
+        </div>
+    </div>
+}

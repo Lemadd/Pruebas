@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_peliculas>
+@{
+    ViewBag.Title = "BuscarPeliculas";
+}
+
+<div>
+    <h1 class="text-center">
+        Lista de Coincidencias con busqueda
+    </h1>
+</div>
+<div class='site-content'>
+    <div class='container'>
+        @ViewBag.mensaje
+    </div>
+</div>
+<div>
+    @Html.Partial("_ListadoPeliculas")
+</div>

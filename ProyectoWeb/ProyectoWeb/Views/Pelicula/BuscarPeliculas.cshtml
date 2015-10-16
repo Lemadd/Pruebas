@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_peliculas>
+@{
+    ViewBag.Title = "BuscarPeliculas";
+}
+<h2>@Html.ActionLink("Agregar Pelicula", "AgregarPelicula", "Pelicula")</h2>
+
+@using (Html.BeginForm("BuscarPeliculas", "Pelicula"))
+{
+    <div>
+        Nombre de la Pelicula
+        <input type="text" class="form-control" placeholder="Buscar Pelicula" value="@ViewBag.pelicula" name="pelicula" >
+        <input type="submit" value="Buscar" class="btn btn-default" />
+    </div>
+}
+@Html.Partial("_LayoutPeliculas")

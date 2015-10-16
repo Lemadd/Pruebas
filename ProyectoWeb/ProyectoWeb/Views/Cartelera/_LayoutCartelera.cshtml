@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ProyectoWeb.Models.tb_funcion>
+@{
+    ViewBag.Title = "_LayoutCartelera";
+}
+
+<div>
+    <table id="peliculas" class="azul display table table-striped table-bordered dataTable" cellspacing="0" role="grid" aria-describedby="example_info">
+        <thead>
+            <tr role="row">
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Funcion</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Sala</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Pelicula</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Fecha Inicio</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Fecha Final</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Estado</th>
+                <th aria-label="Name: activate to sort column ascending" style="width: 114.2px;" colspan="1" rowspan="1" aria-controls="example" tabindex="0" class="sorting">Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reg in Model)
+            {
+                <tr class="" role="row">
+                    <td class="sorting_1">@reg.cod_funcion</td>
+                    <td class="sorting_1">@reg.Sala.nom_sala</td>
+                    <td class="sorting_1">@reg.Peliculas.nombre_peli</td>
+                    <td class="sorting_1">@reg.fecha_inicio.ToShortDateString()</td>
+                    <td class="sorting_1">@reg.fecha_fin.ToShortDateString()</td>
+                    <td class="sorting_1">@reg.EstadoPelicula.descripcion</td>
+                    <td class="sorting_1">@Html.ActionLink("Eliminar", "EliminarCartelera", new { id = reg.cod_funcion})</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

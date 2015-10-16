@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/Content/bootstrap-datetimepicker.css" />
+        <!-- include your less or built css files  -->
+        <!--
+        bootstrap-datetimepicker-build.less will pull in "../bootstrap/variables.less" and "bootstrap-datetimepicker.less";
+        or
+        <link rel="stylesheet" href="/Content/bootstrap-datetimepicker.css" />
+        -->
+    <script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap-datetimepicker.*js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div id="title1">
+                @Html.Partial("_NavBar")
+            </div>
+        </div>
+
+        <div id="carousel">
+            <div id="title2">
+                @Html.Partial("_Carousel")
+            </div>
+        </div>
+
+
+
+        <div class="backgoundimage" id="main">
+
+            @RenderBody()
+            @Scripts.Render("~/bundles/jquery")
+            @RenderSection("scripts", required: false)
+        </div>
+
+        <div id="footer">
+            <div id="title3">
+                @Html.Partial("_Footer")
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿@model ProyectoWeb.Models.tb_peliculas
+@{
+    ViewBag.Title = "VerPelicula";
+    
+    //Termino de imagen  a cargar
+}
+<br>
+<div class='site-content'>
+    <div class='container'>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="row movie-overview-info">
+                    <div class="col-xs-3">
+                        <img src="~/images/peliculas/@(@Model.imagePath)" style="width:100%;" />
+                    </div>
+                    <div class="col-xs-9">
+                        <h1 style="margin-top:0px;">@Model.nombre_peli</h1>
+                        <p>@Model.sinopsis</p>
+                        <div class="col-xs-5" >
+                            <button type="button" class="btn  btn-lg btn-primary" onclick="$('.tab-resume').slideToggle();" style="display:inline-block;">
+                                Mostrar/Ocultar detalles
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <p>@Html.ActionLink("Comprar Entrada", "DetalleCartelera", new { idpelicula = Model.cod_peli }, new { @class = "btn btn-lg btn-primary", @role = "button" })</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-resume" style="display:none;">
+                    <table class="table table-condensed" style="margin-top:10px;margin-bottom:10px;width:100%;">
+                        <tr>
+                            <th width="20%" >Título Original</th>
+                            <td>@Model.titulo_origen</td>
+                        </tr>
+                        
+                        <tr>
+                            <th width="20%">Genero</th>
+                            <td>@Model.Generos.descripcion</td>
+                        </tr>
+
+                        <tr>
+                            <th>Censura</th>
+                            <td>@Model.ClasificacionPelicula.descripcion</td>
+                        </tr>
+                        <tr>
+                            <th>País</th>
+                            <td>@Model.pais_origen</td>
+                        </tr>
+                        <tr>
+                            <th>F. Estreno</th>
+                            <td>@Model.fecha_estreno</td>
+                        </tr>
+                        <tr>
+                            <th>Duración</th>
+                            <td>@Model.duracion minutos</td>
+                        </tr>
+
+                        <tr>
+                            <th>Director</th>
+                            <td>@Model.director</td>
+                        </tr>
+
+                        <tr>
+                            <th>Actores</th>
+                            <td>@Model.actores</td>
+                        </tr>
+                    </table>
+                    </div>
+                <hr>
+                </div>
+            
+            </div>
+        </div>
+    </div>

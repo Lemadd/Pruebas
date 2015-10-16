@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    <h2>@Html.ActionLink("Agregar Local", "AgregarLocal", "Locales")</h2>
+
+    @if (TempData["SUCCESS"] != null)
+    {
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>@TempData["SUCCESS"]</strong>
+        </div>
+    }
+
+    <div class="row">
+        @using (Html.BeginForm())
+        {
+            <div class="col-md-6">
+                <label for="nombreLocal">Nombre del Local</label>
+                <input type="text" class="form-control" placeholder="Buscar Local" value="@ViewBag.local" name="nombreLocal">
+                <input type="submit" value="Buscar" class="btn btn-default" />
+            </div>
+        }
+    </div>
+    <hr />
+
+    @Html.Partial("LayoutLocales")
+</div>

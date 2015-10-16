@@ -1,0 +1,213 @@
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\CIBERTEC\DEW\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+C:\Users\luis\Desktop\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+C:\Users\Jo\Desktop\Luis\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Net.Http.Formatting.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Http.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Http.WebHost.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Net.Http.Formatting.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Http.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Http.WebHost.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Net.Http.Formatting.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Http.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Http.WebHost.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+D:\CIBERTEC\Trabajo FInal DEWB\NEW\Desarrollo Web\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll.config
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Antlr3.Runtime.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\EntityFramework.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Optimization.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Providers.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\WebGrease.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\EntityFramework.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\Newtonsoft.Json.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Mvc.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.Razor.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\EntityFramework.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Providers.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.dll
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.pdb
+C:\Users\Jo\Desktop\Desktop-Carlos\ProyectoWeb\ProyectoWeb\obj\Debug\ProyectoWeb.csprojResolveAssemblyReference.cache
